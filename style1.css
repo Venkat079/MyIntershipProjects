@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+}
+
+.image {
+  height: 680px;
+  width: 600px;
+  background-color: aqua;
+}
+
+.side-image {
+  height: 680px;
+  width: 600px;
+  margin-right: 40px;
+}
+
+.sec {
+  width: calc(100% - 640px); /* Adjusted width to accommodate image */
+}
+
+.heading1 {
+  text-align: center;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.regis {
+  padding-top: 5px;
+}
+
+.heading2,
+.heading3 {
+  color: gray;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  margin-right: 20px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(0, 4, 255)
+  );
+}
+
+.button1 {
+  font-size: medium;
+  font-weight: 700;
+  color: white;
+}
+
+.button1:hover {
+  cursor: pointer;
+}
+
+.para {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+.det1,
+.det2,
+.det3,
+.det4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .image {
+    display: none; /* Hide image on smaller screens */
+  }
+
+  .sec {
+    width: 100%; /* Full width for the form on smaller screens */
+  }
+}
